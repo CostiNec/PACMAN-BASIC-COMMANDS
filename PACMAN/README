@@ -1,0 +1,51 @@
+
+TASK 1:
+In task-ul 1 am folosit o variabila m care imi va numara cate spatii libere 
+am inainte de a pune secventa de stelute.
+In "while" se afiseaza spatiile apoi stelutele excluzand ultima coloana
+unde stelutele sunt puse fara spatiu.
+Ultimele 2 "for"-uri imi afiseaza ultimul rand de stelute( care contine 
+un singur caracter), fara spatiu, apoi afiseaza ultimul "enter".
+
+TASK 2:
+In task-urile 2 si 3 am folosit functia "careu" pentru a desena 
+dreptunghiul si pentru a pozitiona atat omuletul cat si obstacolele de 
+la taskul 3.
+In functia main, dupa declararea variabilelor urmeaza citirea acestora.
+Dupa aceasta citire se vor citi coordonatele obstacolelor in functie de
+"P".Dupa se apeleaza functia "careu" care va afisa careul initial.
+Tot programul este compus din 2 parti mari: Primul, respectiv al doilea "while".
+
+Programul ruleaza primul "while" doar daca omuletul se afla pe marginea arenei
+pentru a se asigura faptul ca acesta face o mutare valida si nu iese in 
+afara.Dupa ce se intra in el se citesc valorile caracterului "c", iar caracterul
+"z" va salva ultimul enter introdus pentru a nu intra in while de 2 ori 
+consecutiv apoi urmeaza verificarile corespunzatoare pentru introducerea lui "q".
+Dupa se verifica daca programul se afla la a doua miscare si trebuie sa mute 
+obstacolele.
+In acest caz, in functie de directie se verifica daca se poate muta omuletul.
+Daca aceasta mutare este valida, se va muta obiectul, apoi obstacolele, apoi 
+se va verifica daca omuletul interactioneaza cu vreun obstacol pentru
+a afisa "Game over". In cazul in care obstacolele trebuie sa ramana pe loc
+va intra in else unde omuletul se va muta in functie de directia indicata 
+si desigur se va verifica daca acesta nu interactioneaza cu vreun obstacol.
+In cazul in care mutarea nu a fost valida, adica nu se va muta pe un spatiu 
+liber si se va muta pe un perete, ultimul if afiseaza careul exact ca inainte,
+insa obstacolele vor fi modificate daca acest lucru s-a intamplat in interiorul
+"while"-ului.
+Urmatorul if verifica daca programul a iesit din primul "while", adica daca 
+omuletul a facut o mutare valida si va afisare careul aferent mutarii.
+Daca mutarea din primul "while" nu a fost valida, programul nu va intra
+in al doilea "while".
+
+In al doilea "while" se respecta aceleasi conditii ca la primul 
+"while".Se citesc variabilele, se verifica daca obstacolele trebuiesc
+mutate sau nu, iar apoi principiul este acelasi. Obstacolele se muta
+dupa omulet, omuletul nu iese din careu si tot asa.
+
+La final, se verifica daca k s-a modificat in timpul rularii programului.
+In cazul in care acesta ramane nemodificat inseamna ca programul a rulat ok
+si ca omuletul a ajuns in coltul din dreapta jos si se afiseaza "Game complete".
+In cazul in care acest k a fost modificat, fie programul a fost oprit cu un
+"q", fie acesta a lovit un obstacol.
+
